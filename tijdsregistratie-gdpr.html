@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Arbeidsregistratie en GDPR: hoe zit dat? | Axoo</title>
+
+  <meta name="description" content="Bij arbeidsregistratie speelt ook GDPR een belangrijke rol. Ontdek waarom beperkte gegevensverwerking en transparantie vaak beter aansluiten bij de praktijk van Belgische KMO’s.">
+
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Axoo">
+  <meta name="theme-color" content="#709b68">
+
+  <link rel="canonical" href="https://www.registratie-arbeidsduur-2027.be/arbeidsregistratie-en-gdpr.html">
+
+  <meta property="og:title" content="Arbeidsregistratie en GDPR: waarom eenvoud belangrijk blijft | Axoo">
+  <meta property="og:description" content="Een duidelijke en proportionele aanpak rond arbeidsregistratie en persoonsgegevens biedt voor veel KMO’s meer rust en duidelijkheid.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.registratie-arbeidsduur-2027.be/arbeidsregistratie-en-gdpr.html">
+  <meta property="og:image" content="https://www.registratie-arbeidsduur-2027.be/images/hero.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+
+    :root {
+      --green: #709b68;
+      --green-dark: #4f7f53;
+      --green-soft: #d9efcb;
+      --text: #252521;
+      --muted: #66665f;
+      --border: #e3e8e5;
+      --bg: #f3f3f0;
+      --white: #ffffff;
+      --shadow: 0 18px 40px rgba(0,0,0,0.07);
+      --radius-xl: 30px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+    }
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    html{
+      scroll-behavior:smooth;
+      scroll-padding-top:90px;
+    }
+
+    body{
+      font-family:"Inter",sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    h1,h2,h3{
+      font-family:"Inter",sans-serif;
+      font-weight:800;
+      line-height:0.98;
+      letter-spacing:-0.04em;
+      color:var(--text);
+    }
+
+    p{
+      font-size:1.03rem;
+      color:var(--muted);
+      margin-bottom:22px;
+    }
+
+    .page{
+      width:min(1500px, calc(100% - 48px));
+      margin:14px auto 40px;
+    }
+
+    .hero{
+      margin-bottom:14px;
+    }
+
+    .hero-card{
+      display:grid;
+      grid-template-columns:42fr 58fr;
+      min-height:340px;
+      background:var(--white);
+      border-radius:var(--radius-xl);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      border:1px solid rgba(37,37,33,0.05);
+    }
+
+    .hero-copy{
+      padding:38px 44px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      background:linear-gradient(
+        90deg,
+        rgba(255,255,255,0.99) 0%,
+        rgba(255,255,255,0.96) 82%,
+        rgba(255,255,255,0) 100%
+      );
+      position:relative;
+      z-index:2;
+    }
+
+    .hero-media{
+      position:relative;
+      min-height:340px;
+      background:url("images/hero.jpg") center center / cover no-repeat;
+    }
+
+    .badge{
+      display:inline-flex;
+      width:fit-content;
+      padding:8px 16px;
+      border-radius:999px;
+      background:var(--green-soft);
+      color:var(--green-dark);
+      font-weight:600;
+      font-size:0.95rem;
+      margin-bottom:18px;
+    }
+
+    .hero h1{
+      font-size:clamp(2.1rem, 3vw, 2.4rem);
+      font-weight:900;
+      line-height:0.95;
+      letter-spacing:-0.055em;
+      text-transform:uppercase;
+      margin-bottom:22px;
+      max-width:650px;
+    }
+
+    .hero-text{
+      font-size:1.08rem;
+      color:var(--muted);
+      max-width:520px;
+      margin-bottom:34px;
+      line-height:1.7;
+    }
+
+    .partner-text{
+      color:var(--muted);
+      font-size:0.95rem;
+      margin-bottom:8px;
+      font-weight:500;
+    }
+
+    .logo-link{
+      display:inline-block;
+      width:fit-content;
+    }
+
+    .logo{
+      width:130px;
+      height:auto;
+    }
+
+    .hero-actions{
+      position:absolute;
+      right:36px;
+      bottom:26px;
+      z-index:4;
+      display:flex;
+      gap:14px;
+      align-items:center;
+    }
+
+    .faq-button{
+      height:58px;
+      padding:0 28px;
+      border-radius:999px;
+      border:3px solid white;
+      background:var(--green);
+      color:white;
+      font-weight:900;
+      font-size:0.84rem;
+      letter-spacing:0.05em;
+      text-transform:uppercase;
+      display:inline-flex;
+      gap:22px;
+      align-items:center;
+      box-shadow:0 14px 36px rgba(0,0,0,0.16);
+      white-space:nowrap;
+    }
+
+    .content-shell{
+      margin-top:12px;
+      background:white;
+      border:1px solid var(--border);
+      border-radius:var(--radius-xl);
+      padding:26px 34px;
+      display:grid;
+      grid-template-columns:390px 1px 1fr;
+      gap:48px;
+      min-height:570px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.03);
+    }
+
+    .divider{
+      background:var(--border);
+      width:1px;
+    }
+
+    .article-card{
+      background:white;
+      border:1px solid var(--border);
+      border-radius:var(--radius-lg);
+      padding:24px 20px;
+      box-shadow:0 8px 20px rgba(20,45,35,0.03);
+    }
+
+    .article-card h2{
+      font-size:1rem;
+      color:var(--green-dark);
+      text-transform:uppercase;
+      letter-spacing:0.04em;
+      font-weight:900;
+      margin-bottom:22px;
+    }
+
+    .article-link{
+      display:grid;
+      grid-template-columns:34px 1fr;
+      gap:14px;
+      margin-bottom:22px;
+      align-items:start;
+    }
+
+    .article-icon{
+      width:28px;
+      height:28px;
+      border:2px solid var(--text);
+      border-radius:4px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:15px;
+      font-weight:700;
+    }
+
+    .article-title{
+      display:block;
+      font-size:0.98rem;
+      font-weight:700;
+      color:var(--text);
+      line-height:1.25;
+      letter-spacing:-0.015em;
+      margin-bottom:4px;
+    }
+
+    .article-date{
+      display:block;
+      font-size:0.82rem;
+      color:var(--muted);
+      font-weight:500;
+    }
+
+    .all-articles{
+      display:inline-flex;
+      align-items:center;
+      gap:14px;
+      margin-top:8px;
+      color:var(--green-dark);
+      font-weight:900;
+      font-size:0.88rem;
+      letter-spacing:0.05em;
+      text-transform:uppercase;
+    }
+
+    .main-content{
+      padding-right:18px;
+    }
+
+    .article-meta{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      margin-bottom:28px;
+      color:var(--muted);
+      font-size:0.92rem;
+      font-weight:600;
+    }
+
+    .content-article h2{
+      font-size:2rem;
+      margin-top:54px;
+      margin-bottom:22px;
+      text-transform:uppercase;
+    }
+
+    .content-article ul{
+      padding-left:22px;
+      margin-bottom:28px;
+      color:var(--muted);
+    }
+
+    .content-article li{
+      margin-bottom:12px;
+    }
+
+    .quote-box{
+      background:#edf5ef;
+      border-left:5px solid var(--green);
+      padding:24px 28px;
+      border-radius:18px;
+      margin:36px 0;
+    }
+
+    .quote-box p{
+      margin-bottom:0;
+      color:var(--text);
+      font-size:0.92rem;
+      line-height:1.75;
+      font-weight:500;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<main class="page">
+
+  <section class="hero">
+
+    <div class="hero-card">
+
+      <div class="hero-copy">
+
+        <div class="badge">
+          Praktische info voor Belgische KMO’s
+        </div>
+
+        <h1>
+          Arbeidsregistratie en GDPR: hoe zit dat?
+        </h1>
+
+        <p class="hero-text">
+          Bij arbeidsregistratie speelt naast gebruiksgemak ook de verwerking van persoonsgegevens
+          een belangrijke rol. Veel ondernemingen zoeken daarom een evenwicht tussen correcte registratie,
+          praktische werkbaarheid en respect voor privacy.
+        </p>
+
+        <p class="partner-text">
+          Deze website werd opgesteld in samenwerking met
+        </p>
+
+        <a
+          href="https://www.axoo.be/referal"
+          class="logo-link"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="images/logo-web.png"
+            alt="Axoo logo"
+            class="logo"
+          >
+        </a>
+
+      </div>
+
+      <div class="hero-media">
+
+        <div class="hero-actions">
+
+          <a href="index.html#veelgestelde-vragen" class="faq-button">
+            Veelgestelde vragen
+            <span>→</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="content-shell">
+
+    <aside class="article-card">
+
+      <h2>
+        Laatste artikelen
+      </h2>
+
+      <div id="articles-list"></div>
+
+      <a href="artikelen.html" class="all-articles">
+        Bekijk alle artikelen
+        <span>→</span>
+      </a>
+
+    </aside>
+
+    <div class="divider"></div>
+
+    <article class="main-content content-article">
+
+      <div class="article-meta">
+        <span>12 mei 2026</span>
+        <span>•</span>
+        <span>GDPR & arbeidsregistratie</span>
+      </div>
+
+      <div class="quote-box">
+        <p>
+          Voor veel ondernemingen bestaat de uitdaging erin om een evenwicht te vinden tussen correcte arbeidsregistratie,
+          praktische werkbaarheid en respect voor de privacy van werknemers.
+        </p>
+      </div>
+
+      <h2>
+        Arbeidsregistratie verwerkt persoonsgegevens
+      </h2>
+
+      <p>
+        Bij de keuze van een systeem voor arbeidsregistratie
+        speelt naast gebruiksgemak ook de verwerking van persoonsgegevens een belangrijke rol.
+      </p>
+
+      <p>
+        Werkgevers verwerken immers gegevens over aanwezigheid,
+        arbeidstijden en prestaties van werknemers,
+        waardoor aandacht voor GDPR en gegevensbescherming essentieel is.
+      </p>
+
+      <p>
+        Voor ondernemingen is het daarom belangrijk om stil te staan
+        bij welke gegevens werkelijk noodzakelijk zijn
+        voor een correcte arbeidsregistratie.
+      </p>
+
+      <h2>
+        Niet meer gegevens verzamelen dan nodig
+      </h2>
+
+      <p>
+        In veel gevallen volstaat een beperkte registratie
+        van begin- en eindtijden
+        zonder bijkomende of verregaande opvolging van werknemersactiviteiten.
+      </p>
+
+      <p>
+        Systemen die grote hoeveelheden persoonsgegevens verzamelen
+        of bijkomende functies combineren,
+        kunnen zorgen voor extra complexiteit op vlak van privacybeheer.
+      </p>
+
+      <p>
+        Denk bijvoorbeeld aan permanente locatiebepaling,
+        uitgebreide gedragsanalyse of continue monitoring van werknemersactiviteiten.
+      </p>
+
+      <h2>
+        Transparantie en proportionaliteit blijven belangrijk
+      </h2>
+
+      <p>
+        Een duidelijke en proportionele aanpak
+        is daarom voor veel ondernemingen aangewezen.
+      </p>
+
+      <p>
+        Daarbij wordt vaak vertrokken vanuit enkele basisprincipes:
+      </p>
+
+      <ul>
+        <li>enkel gegevens registreren die noodzakelijk zijn voor arbeidsregistratie;</li>
+        <li>transparant communiceren over welke gegevens verwerkt worden;</li>
+        <li>zorgen voor veilige opslag en beperkte toegang;</li>
+        <li>vermijden dat gegevens voor andere doeleinden gebruikt worden.</li>
+      </ul>
+
+      <p>
+        Op die manier blijft arbeidsregistratie overzichtelijk,
+        duidelijk en proportioneel.
+      </p>
+
+      <h2>
+        Ook de technische opbouw speelt een rol
+      </h2>
+
+      <p>
+        De manier waarop een systeem technisch opgebouwd is,
+        kan eveneens een verschil maken op vlak van gegevensbescherming.
+      </p>
+
+      <p>
+        Oplossingen die vertrekken vanuit eenvoudige registratie
+        en beperkte gegevensverwerking
+        sluiten vaak beter aan bij het principe van gegevensminimalisatie
+        binnen de GDPR-wetgeving.
+      </p>
+
+      <p>
+        Dat betekent dat enkel gegevens verwerkt worden
+        die nodig zijn voor het beoogde doel.
+      </p>
+
+      <h2>
+        Praktische werkbaarheid blijft belangrijk
+      </h2>
+
+      <p>
+        Voor veel KMO’s bestaat de uitdaging erin
+        een evenwicht te vinden tussen correcte arbeidsregistratie,
+        praktische werkbaarheid en respect voor de privacy van werknemers.
+      </p>
+
+      <p>
+        Een systeem dat duidelijk,
+        transparant en beperkt blijft tot de essentie
+        biedt daarbij vaak meer rust en duidelijkheid
+        dan complexe toepassingen
+        met uitgebreide monitoring- of analysemogelijkheden.
+      </p>
+
+      <h2>
+        Eenvoud zorgt vaak voor meer duidelijkheid
+      </h2>
+
+      <p>
+        Hoe eenvoudiger een systeem werkt,
+        hoe makkelijker het doorgaans wordt
+        om duidelijke afspraken te maken rond registratie en privacy.
+      </p>
+
+      <p>
+        Dat helpt ondernemingen om arbeidsregistratie werkbaar te houden
+        zonder onnodige complexiteit
+        of bijkomende administratieve belasting.
+      </p>
+
+    </article>
+
+  </section>
+
+</main>
+
+<script src="js/articles.js"></script>
+
+</body>
+</html>

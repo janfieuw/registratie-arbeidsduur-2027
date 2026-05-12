@@ -1,5 +1,11 @@
 const articles = [
   {
+    title: "Tijdsregistratie & GDPR",
+    date: "12 mei 2026",
+    url: "tijdsregistratie-gdpr.html",
+    keywords: "Vermijd frictie tussen arbeidsregistratie en GDPR."
+  },
+    {
     title: "Tijdsregistratie vanaf 2027 - vermijd overkill",
     date: "12 mei 2026",
     url: "tijdsregistratie-overkill.html",
