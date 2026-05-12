@@ -1,5 +1,11 @@
 const articles = [
   {
+    title: "Tijdsregistratie vanaf 2027 - vermijd overkill",
+    date: "12 mei 2026",
+    url: "tijdsregistratie-overkill.html",
+    keywords: "Niet elke onderneming heeft nood aan uitgebreide HR-software."
+  },
+    {
     title: "Wat zegt Partena Professional over tijdsregistratie vanaf 2027?",
     date: "25 februari 2026",
     url: "wat-zegt-partena-professional-over-tijdsregistratie-vanaf-2027.html",
