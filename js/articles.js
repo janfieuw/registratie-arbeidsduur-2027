@@ -6,10 +6,10 @@ const articles = [
     keywords: "securex tijdsregistratie 2027 arbeidsduurregistratie objectief betrouwbaar toegankelijk"
   },
   {
-    title: "Arbeidsduurregistratie en GDPR: waar moet je op letten?",
-    date: "19 mei 2025",
-    url: "arbeidsduurregistratie-en-gdpr.html",
-    keywords: "gdpr privacy gegevens werknemers registratie arbeidsduur"
+    title: "Wat zegt Acerta over tijdsregistratie vanaf 2027?",
+    date: "25 november 2025",
+    url: "wat-zegt-acerta-over-tijdsregistratie-vanaf-2027.html",
+    keywords: "Acerta verduidelijkt waarom tijdsregistratie vanaf 2027 verplicht wordt en welke principes belangrijk zijn voor werkgevers."
   },
   {
     title: "Wat zegt UNIZO over de nieuwe wet?",
