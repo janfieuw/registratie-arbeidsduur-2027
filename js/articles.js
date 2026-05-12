@@ -2,7 +2,7 @@ const articles = [
   {
     title: "Wat zegt Liantis over tijdsregistratie vanaf 2027?",
     date: "11 februari 2026",
-    url: "wat-zegt-liantis-over-de-nieuwe-wet.html",
+    url: "wat-zegt-Liantis-over-tijdsregistratie-vanaf-2027.html",
     keywords: "Liantis verduidelijkt waarom arbeidsduurregistratie verplicht wordt vanaf 2027 en welke principes belangrijk zijn voor werkgevers."
   },
     {
