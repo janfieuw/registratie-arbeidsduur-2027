@@ -370,38 +370,62 @@
       margin-bottom: 26px;
       line-height: 1.7;
     }
+.info-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  background: linear-gradient(180deg, #f4f8f4 0%, #eef5ef 100%);
+  border-radius: 26px;
+  padding: 18px 10px;
+  margin-bottom: 42px;
+  border: 1px solid #e4ece4;
+  overflow: hidden;
+}
 
-    .info-row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      background: linear-gradient(90deg, #edf5ef, #f3f7f4);
-      border-radius: var(--radius-md);
-      padding: 28px 34px;
-      margin-bottom: 34px;
-    }
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 24px 28px;
+  position: relative;
+}
 
-    .info-item {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-      font-weight: 900;
-      color: var(--text);
-      line-height: 1.25;
-    }
+.info-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 18%;
+  width: 1px;
+  height: 64%;
+  background: #dfe8df;
+}
 
-    .info-icon {
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      background: var(--green-soft);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--green-dark);
-      font-size: 24px;
-      flex: 0 0 auto;
-    }
+.info-item span {
+  font-size: 1.28rem;
+  font-weight: 900;
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+  color: var(--text);
+}
+
+.info-icon {
+  width: 84px;
+  height: 84px;
+  min-width: 84px;
+  border-radius: 50%;
+  background: radial-gradient(circle at top, #edf7e6 0%, #dcefd0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.8),
+    0 8px 20px rgba(112,155,104,0.10);
+}
+
+.info-icon svg {
+  width: 42px;
+  height: 42px;
+}
 
     .faq-title {
       color: var(--text);
@@ -656,33 +680,33 @@
           betrouwbaar en toegankelijk registreren. Dit is vastgelegd in de nieuwe Europese Arbeidstijd Richtlijn.
         </p>
 
-        <div class="info-row">
+      <div class="info-row">
 
-          <div class="info-item">
-            <span class="info-icon">▣</span>
-            <span>
-              Verplicht vanaf<br>
-              1 januari 2027
-            </span>
-          </div>
+  <div class="info-item">
+    <span class="info-icon">▣</span>
+    <span>
+      Verplicht vanaf<br>
+      1 januari 2027
+    </span>
+  </div>
 
-          <div class="info-item">
-            <span class="info-icon">👥</span>
-            <span>
-              Voor werkgevers<br>
-              en werknemers
-            </span>
-          </div>
+  <div class="info-item">
+    <span class="info-icon">👥</span>
+    <span>
+      Voor werkgevers<br>
+      en werknemers
+    </span>
+  </div>
 
-          <div class="info-item">
-            <span class="info-icon">✓</span>
-            <span>
-              Objectief, betrouwbaar<br>
-              en toegankelijk
-            </span>
-          </div>
+  <div class="info-item">
+    <span class="info-icon">✓</span>
+    <span>
+      Objectief, betrouwbaar<br>
+      en toegankelijk
+    </span>
+  </div>
 
-        </div>
+</div>
 
         <h3 class="faq-title">
           Veelgestelde vragen
