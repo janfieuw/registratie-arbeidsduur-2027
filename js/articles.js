@@ -1,5 +1,11 @@
 const articles = [
   {
+    title: "Aanbieders tijdsregistratie",
+    date: "12 mei 2026",
+    url: "overzicht-aanbieders-tijdsregistratie.html",
+    keywords: "Enkele aanbieders van tijdsregistratie"
+  },
+    {
     title: "Tijdsregistratie & GDPR",
     date: "12 mei 2026",
     url: "tijdsregistratie-gdpr.html",
