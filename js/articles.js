@@ -1,5 +1,11 @@
 const articles = [
   {
+    title: "Wat zegt Partena Professional over tijdsregistratie vanaf 2027?",
+    date: "25 februari 2026",
+    url: "wat-zegt-partena-professional-over-tijdsregistratie-vanaf-2027.html",
+    keywords: "Partena Professional licht toe wat de resolutie rond verplichte tijdsregistratie vanaf 2027 inhoudt voor Belgische werkgevers."
+  },
+    {
     title: "Wat zegt Liantis over tijdsregistratie vanaf 2027?",
     date: "12 februari 2026",
     url: "wat-zegt-liantis-over-tijdsregistratie-vanaf-2027.html",
