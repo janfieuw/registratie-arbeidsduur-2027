@@ -1,19 +1,19 @@
 const articles = [
   {
     title: "Wat zegt Liantis over tijdsregistratie vanaf 2027?",
-    date: "11 februari 2026",
+    date: "12 februari 2026",
     url: "wat-zegt-liantis-over-tijdsregistratie-vanaf-2027.html",
     keywords: "Liantis verduidelijkt waarom arbeidsduurregistratie verplicht wordt vanaf 2027 en welke principes belangrijk zijn voor werkgevers."
   },
     {
     title: "Wat zegt Securex over tijdsregistratie vanaf 2027?",
-    date: "26 december 2025",
+    date: "16 december 2025",
     url: "wat-zegt-securex-over-tijdsregistratie-vanaf-2027.html",
     keywords: "securex tijdsregistratie 2027 arbeidsduurregistratie objectief betrouwbaar toegankelijk"
   },
   {
     title: "Wat zegt Acerta over tijdsregistratie vanaf 2027?",
-    date: "25 november 2025",
+    date: "28 november 2025",
     url: "wat-zegt-acerta-over-tijdsregistratie-vanaf-2027.html",
     keywords: "Acerta verduidelijkt waarom tijdsregistratie vanaf 2027 verplicht wordt en welke principes belangrijk zijn voor werkgevers."
   },
