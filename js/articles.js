@@ -23,6 +23,12 @@ const articles = [
     url: "wat-zegt-acerta-over-tijdsregistratie-vanaf-2027.html",
     keywords: "Acerta verduidelijkt waarom tijdsregistratie vanaf 2027 verplicht wordt en welke principes belangrijk zijn voor werkgevers."
   },
+  {
+    title: "Wat zegt UNIZO over tijdsregistratie vanaf 2027?",
+    date: "27 november 2025",
+    url: "wat-zegt-unizo-over-tijdsregistratie-vanaf-2027.html",
+    keywords: "UNIZO reageert op de plannen rond verplichte tijdsregistratie vanaf 2027 en waarschuwt voor extra administratieve lasten."
+  },
  
 ];
 
