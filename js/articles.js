@@ -29,6 +29,12 @@ const articles = [
     url: "wat-zegt-unizo-over-tijdsregistratie-vanaf-2027.html",
     keywords: "UNIZO reageert op de plannen rond verplichte tijdsregistratie vanaf 2027 en waarschuwt voor extra administratieve lasten."
   },
+   {
+    title: "Wat zegt VOKA over tijdsregistratie vanaf 2027?",
+    date: "27 november 2025",
+    url: "wat-zegt-voka-over-tijdsregistratie-vanaf-2027.html",
+    keywords: "VOKA noemt verplichte registratie van arbeidstijd pure kafka en waarschuwt voor extra administratieve druk."
+  },
  
 ];
 
