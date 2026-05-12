@@ -1,5 +1,11 @@
 const articles = [
   {
+    title: "Wat zegt Liantis over tijdsregistratie vanaf 2027?",
+    date: "11 februari 2026",
+    url: "wat-zegt-liantis-over-de-nieuwe-wet.html",
+    keywords: "Liantis verduidelijkt waarom arbeidsduurregistratie verplicht wordt vanaf 2027 en welke principes belangrijk zijn voor werkgevers."
+  },
+    {
     title: "Wat zegt Securex over tijdsregistratie vanaf 2027?",
     date: "26 december 2025",
     url: "wat-zegt-securex-over-tijdsregistratie-vanaf-2027.html",
@@ -11,12 +17,7 @@ const articles = [
     url: "wat-zegt-acerta-over-tijdsregistratie-vanaf-2027.html",
     keywords: "Acerta verduidelijkt waarom tijdsregistratie vanaf 2027 verplicht wordt en welke principes belangrijk zijn voor werkgevers."
   },
-  {
-    title: "Wat zegt UNIZO over de nieuwe wet?",
-    date: "16 mei 2025",
-    url: "wat-zegt-unizo-over-de-nieuwe-wet.html",
-    keywords: "unizo nieuwe wet kmo werkgevers arbeidsduur registratie"
-  }
+ 
 ];
 
 function renderArticlesList() {
