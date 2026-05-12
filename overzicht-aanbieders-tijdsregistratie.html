@@ -350,22 +350,42 @@
     }
 
     .provider-logo-box{
-      min-height:118px;
-      border-radius:18px;
-      background:linear-gradient(180deg,#f7faf7 0%,#eef5ef 100%);
-      border:1px solid #e4ece4;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:24px;
-    }
+  min-height:130px;
+  border-radius:18px;
+  background:linear-gradient(180deg,#f7faf7 0%,#eef5ef 100%);
+  border:1px solid #e4ece4;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:22px;
+}
 
-    .provider-logo-box img{
-      max-width:130px;
-      max-height:58px;
-      object-fit:contain;
-    }
+.provider-logo-box img{
+  width:auto;
+  height:auto;
+  object-fit:contain;
+}
 
+/* originele verhoudingen per logo */
+.provider-logo-box img.logo-axoo{
+  max-width:170px;
+  max-height:90px;
+}
+
+.provider-logo-box img.logo-odoo{
+  max-width:150px;
+  max-height:80px;
+}
+
+.provider-logo-box img.logo-onetwo{
+  max-width:150px;
+  max-height:110px;
+}
+
+.provider-logo-box img.logo-clockwise{
+  max-width:180px;
+  max-height:90px;
+}
     .provider-content h3{
       font-size:1.42rem;
       line-height:1.05;
@@ -621,7 +641,7 @@
             rel="noopener"
             aria-label="Bezoek Axoo"
           >
-            <img src="images/axoo-logo.png" alt="Axoo logo">
+            <img src="images/axoo-logo.png" alt="Axoo logo" class="logo-axoo">
           </a>
 
           <div class="provider-content">
@@ -671,7 +691,7 @@
             rel="noopener"
             aria-label="Bezoek Odoo"
           >
-            <img src="images/odoo-logo.png" alt="Odoo logo">
+           <img src="images/odoo-logo.png" alt="Odoo logo" class="logo-odoo">
           </a>
 
           <div class="provider-content">
@@ -722,7 +742,7 @@
             rel="noopener"
             aria-label="Bezoek ONE TWO"
           >
-            <img src="images/onetwo-logo.png" alt="ONE TWO logo">
+            <img src="images/onetwo-logo.png" alt="ONE/TWO logo" class="logo-onetwo">
           </a>
 
           <div class="provider-content">
@@ -772,7 +792,7 @@
             rel="noopener"
             aria-label="Bezoek ClockWise"
           >
-            <img src="images/clockwise-logo.png" alt="ClockWise logo">
+            <img src="images/clockwise-logo.png" alt="ClockWise logo" class="logo-clockwise">
           </a>
 
           <div class="provider-content">
