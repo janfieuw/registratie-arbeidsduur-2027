@@ -1,4 +1,10 @@
 const articles = [
+    {
+    title: "Tijdsregistratie & flexibiliteit",
+    date: "13 mei 2026",
+    url: "tijdsregistratie-flexibiliteit.html",
+    keywords: "Arbeidsregistratie en flexibiliteit: blijft geven en nemen mogelijk?"
+  },
   {
     title: "Aanbieders tijdsregistratie",
     date: "12 mei 2026",
