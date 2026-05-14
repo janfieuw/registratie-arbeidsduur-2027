@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>BookU en arbeidsregistratie voor KMO’s | Axoo</title>
+
+<meta name="description" content="Ontdek hoe BookU arbeidsregistratie benadert vanuit planning en HR-processen, en waarom Axoo bewust kiest voor een minimale compliance-aanpak voor KMO’s.">
+
+<meta name="robots" content="index, follow">
+<meta name="author" content="Axoo">
+<meta name="theme-color" content="#709b68">
+
+<link rel="canonical" href="https://www.registratie-arbeidsduur-2027.be/booku-arbeidsregistratie-kmo.html">
+
+<meta property="og:title" content="BookU en arbeidsregistratie voor KMO’s | Axoo">
+<meta property="og:description" content="Waarom sommige KMO’s kiezen voor eenvoudige arbeidsregistratie zonder complexe personeelsplanning.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.registratie-arbeidsduur-2027.be/booku-arbeidsregistratie-kmo.html">
+<meta property="og:image" content="https://www.registratie-arbeidsduur-2027.be/images/hero.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+  --green: #709b68;
+  --green-dark: #4f7f53;
+  --green-soft: #d9efcb;
+  --text: #252521;
+  --muted: #66665f;
+  --border: #e3e8e5;
+  --bg: #f3f3f0;
+  --white: #ffffff;
+  --shadow: 0 18px 40px rgba(0,0,0,0.07);
+  --radius-xl: 30px;
+  --radius-lg: 20px;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:90px;
+}
+
+body{
+  font-family:"Inter",sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+h1,h2,h3{
+  font-family:"Inter",sans-serif;
+  font-weight:800;
+  line-height:0.98;
+  letter-spacing:-0.04em;
+  color:var(--text);
+}
+
+p{
+  font-size:1.03rem;
+  color:var(--muted);
+  margin-bottom:22px;
+}
+
+.page{
+  width:min(1500px, calc(100% - 48px));
+  margin:14px auto 40px;
+}
+
+.hero{
+  margin-bottom:14px;
+}
+
+.hero-card{
+  display:grid;
+  grid-template-columns:42fr 58fr;
+  min-height:340px;
+  background:var(--white);
+  border-radius:var(--radius-xl);
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  border:1px solid rgba(37,37,33,0.05);
+}
+
+.hero-copy{
+  padding:38px 44px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background:linear-gradient(
+    90deg,
+    rgba(255,255,255,0.99) 0%,
+    rgba(255,255,255,0.96) 82%,
+    rgba(255,255,255,0) 100%
+  );
+  position:relative;
+  z-index:2;
+}
+
+.hero-media{
+  position:relative;
+  min-height:340px;
+  background:url("images/hero-qr-code.png") center center / cover no-repeat;
+}
+
+.badge{
+  display:inline-flex;
+  width:fit-content;
+  padding:8px 16px;
+  border-radius:999px;
+  background:var(--green-soft);
+  color:var(--green-dark);
+  font-weight:600;
+  font-size:0.95rem;
+  margin-bottom:18px;
+}
+
+.hero h1{
+  font-size:clamp(2.1rem, 3vw, 2.4rem);
+  font-weight:900;
+  line-height:0.95;
+  letter-spacing:-0.055em;
+  text-transform:uppercase;
+  margin-bottom:22px;
+  max-width:650px;
+}
+
+.hero-text{
+  font-size:1.08rem;
+  color:var(--muted);
+  max-width:520px;
+  margin-bottom:34px;
+  line-height:1.7;
+}
+
+.partner-text{
+  color:var(--muted);
+  font-size:0.95rem;
+  margin-bottom:8px;
+  font-weight:500;
+}
+
+.logo{
+  width:130px;
+  height:auto;
+}
+
+.hero-actions{
+  position:absolute;
+  right:36px;
+  bottom:26px;
+  z-index:4;
+}
+
+.faq-button{
+  height:58px;
+  padding:0 28px;
+  border-radius:999px;
+  border:3px solid white;
+  background:var(--green);
+  color:white;
+  font-weight:900;
+  font-size:0.84rem;
+  letter-spacing:0.05em;
+  text-transform:uppercase;
+  display:inline-flex;
+  gap:22px;
+  align-items:center;
+  box-shadow:0 14px 36px rgba(0,0,0,0.16);
+}
+
+.content-shell{
+  margin-top:12px;
+  background:white;
+  border:1px solid var(--border);
+  border-radius:var(--radius-xl);
+  padding:26px 34px;
+  display:grid;
+  grid-template-columns:390px 1px 1fr;
+  gap:48px;
+  min-height:570px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.03);
+}
+
+.divider{
+  background:var(--border);
+  width:1px;
+}
+
+.article-card{
+  background:white;
+  border:1px solid var(--border);
+  border-radius:var(--radius-lg);
+  padding:24px 20px;
+}
+
+.article-card h2{
+  font-size:1rem;
+  color:var(--green-dark);
+  text-transform:uppercase;
+  letter-spacing:0.04em;
+  font-weight:900;
+  margin-bottom:22px;
+}
+
+.main-content{
+  padding-right:18px;
+}
+
+.article-meta{
+  display:flex;
+  gap:14px;
+  align-items:center;
+  margin-bottom:28px;
+  color:var(--muted);
+  font-size:0.92rem;
+  font-weight:600;
+}
+
+.content-article h2{
+  font-size:2rem;
+  margin-top:54px;
+  margin-bottom:22px;
+  text-transform:uppercase;
+}
+
+.content-article h2:first-of-type{
+  margin-top:0;
+}
+
+.quote-box{
+  background:#edf5ef;
+  border-left:5px solid var(--green);
+  padding:24px 28px;
+  border-radius:18px;
+  margin:36px 0;
+}
+
+.quote-box p{
+  margin-bottom:0;
+  color:var(--text);
+  font-size:0.92rem;
+  line-height:1.75;
+  font-weight:500;
+}
+
+.provider-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:18px;
+  margin-top:28px;
+}
+
+.provider-card{
+  display:grid;
+  grid-template-columns:180px 1fr;
+  gap:28px;
+  align-items:center;
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:26px 28px;
+  background:#ffffff;
+  box-shadow:0 8px 22px rgba(20,45,35,0.035);
+}
+
+.provider-logo-box{
+  aspect-ratio:1/1;
+  border-radius:18px;
+  background:linear-gradient(180deg,#f7faf7 0%,#eef5ef 100%);
+  border:1px solid #e4ece4;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+.provider-logo-box img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  padding:18px;
+}
+
+.provider-content h3{
+  font-size:1.42rem;
+  margin-bottom:12px;
+}
+
+.provider-content p{
+  margin-bottom:14px;
+  font-size:0.98rem;
+  line-height:1.65;
+}
+
+.provider-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:14px;
+}
+
+.provider-tag{
+  display:inline-flex;
+  align-items:center;
+  padding:6px 12px;
+  border-radius:999px;
+  background:#edf5ef;
+  color:var(--green-dark);
+  font-size:0.78rem;
+  font-weight:800;
+  text-transform:uppercase;
+}
+
+.comparison-disclaimer{
+  margin-top:34px;
+  padding-top:22px;
+  border-top:1px solid var(--border);
+  font-size:0.9rem;
+  color:var(--muted);
+  line-height:1.65;
+}
+
+@media (max-width:1100px){
+
+  .hero-card{
+    grid-template-columns:1fr;
+  }
+
+  .content-shell{
+    grid-template-columns:1fr;
+  }
+
+  .divider{
+    display:none;
+  }
+
+  .provider-card{
+    grid-template-columns:1fr;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<main class="page">
+
+<section class="hero">
+
+<div class="hero-card">
+
+<div class="hero-copy">
+
+<div class="badge">
+Praktische info voor Belgische KMO’s
+</div>
+
+<h1>
+BOOKU EN DE VERSCHILLENDE VISIES OP ARBEIDSREGISTRATIE
+</h1>
+
+<p class="hero-text">
+De invoering van verplichte arbeidsregistratie vanaf 2027 zorgt ervoor dat ondernemingen opnieuw moeten nadenken over hoe arbeid georganiseerd, geregistreerd en opgevolgd wordt.
+</p>
+
+<p class="partner-text">
+Deze website werd opgesteld in samenwerking met
+</p>
+
+<a
+href="https://www.axoo.be/referal"
+target="_blank"
+rel="noopener"
+>
+<img
+src="images/logo-web.png"
+alt="Axoo logo"
+class="logo"
+>
+</a>
+
+</div>
+
+<div class="hero-media">
+
+<div class="hero-actions">
+
+<a href="index.html#veelgestelde-vragen" class="faq-button">
+Veelgestelde vragen
+<span>→</span>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="content-shell">
+
+<aside class="article-card">
+
+<h2>
+Laatste artikelen
+</h2>
+
+<div id="articles-list"></div>
+
+</aside>
+
+<div class="divider"></div>
+
+<article class="main-content content-article">
+
+<div class="article-meta">
+<span>14 mei 2026</span>
+<span>•</span>
+<span>Arbeidsregistratie voor KMO’s</span>
+</div>
+
+<div class="quote-box">
+<p>
+De discussie rond arbeidsregistratie gaat vandaag niet alleen over registratie zelf,
+maar over de vraag hoe ondernemingen arbeid willen organiseren richting 2027.
+</p>
+</div>
+
+<h2>
+Het momentum richting 2027
+</h2>
+
+<p>
+Binnen veel ondernemingen ontstaat vandaag een belangrijk momentum rond verplichte arbeidsregistratie.
+De invoering van de regelgeving vanaf 2027 zorgt ervoor dat bedrijven opnieuw moeten nadenken over hoe arbeid georganiseerd, geregistreerd en opgevolgd wordt.
+</p>
+
+<p>
+Voor sommige ondernemingen vormt dat het ideale moment om verder te evolueren richting geïntegreerde planning, personeelsbeheer en HR-processen.
+Voor andere bedrijven rijst echter een fundamentele vraag:
+</p>
+
+<div class="quote-box">
+<p>
+is die evolutie voor onze onderneming daadwerkelijk een voordeel —
+of creëert ze vooral bijkomende complexiteit?
+</p>
+</div>
+
+<div class="provider-grid">
+
+<section class="provider-card">
+
+<a
+href="#"
+class="provider-logo-box"
+aria-label="BookU"
+>
+<img src="images/ubook-logo.png" alt="BookU logo">
+</a>
+
+<div class="provider-content">
+
+<h3>
+BookU
+</h3>
+
+<p>
+BookU benadert arbeidsregistratie vanuit een bredere planning- en HR-omgeving.
+Werkroosters, prestaties, afwezigheden en loonverwerking kunnen centraal beheerd en geïntegreerd opgevolgd worden.
+</p>
+
+<p>
+Voor organisaties met grotere teams, complexe uurroosters of uitgebreide personeelsplanning biedt die aanpak duidelijke voordelen.
+De oplossing sluit goed aan bij ondernemingen waar planning de dagelijkse werking structureert.
+</p>
+
+<div class="provider-tags">
+<span class="provider-tag">Planning</span>
+<span class="provider-tag">HR</span>
+<span class="provider-tag">Personeelsbeheer</span>
+<span class="provider-tag">Integratie</span>
+</div>
+
+</div>
+
+</section>
+
+<section class="provider-card">
+
+<a
+href="https://www.axoo.be"
+class="provider-logo-box"
+target="_blank"
+rel="noopener"
+aria-label="Axoo"
+>
+<img src="images/axoo-logo.png" alt="Axoo logo">
+</a>
+
+<div class="provider-content">
+
+<h3>
+Axoo
+</h3>
+
+<p>
+Axoo maakt bewust de omgekeerde beweging:
+geen planning als vertrekpunt,
+maar registratie van effectieve aanwezigheid als minimale compliance-laag.
+</p>
+
+<p>
+Daardoor blijft de administratieve impact beperkt,
+terwijl ondernemingen toch beschikken over een controleerbare en wettelijk conforme registratie.
+</p>
+
+<div class="provider-tags">
+<span class="provider-tag">Compliance-first</span>
+<span class="provider-tag">KMO</span>
+<span class="provider-tag">Eenvoud</span>
+<span class="provider-tag">Werkbaarheid</span>
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<h2>
+De realiteit binnen veel Vlaamse KMO’s
+</h2>
+
+<p>
+Binnen veel Vlaamse KMO’s verloopt de dagelijkse werking minder planmatig en vaak veel pragmatischer.
+Flexibiliteit, operationele eenvoud en wederzijds vertrouwen spelen daar dikwijls een grotere rol dan vooraf volledig uitgewerkte uurroosters.
+</p>
+
+<p>
+Daardoor ontstaat regelmatig weerstand tegenover systemen waarbij werkroosters vooraf gedetailleerd moeten worden ingepland,
+gevalideerd en vervolgens gekoppeld aan tijdsregistratie.
+</p>
+
+<p>
+Niet omdat dergelijke systemen “slecht” zijn,
+maar omdat veel kleinere ondernemingen eenvoudigweg een andere behoefte hebben.
+</p>
+
+<p>
+Voor hen draait de essentie vaak niet om uitgebreide HR-processen,
+maar om een eenvoudige en controleerbare registratie van effectieve aanwezigheid op de werkvloer.
+</p>
+
+<h2>
+Een fundamenteel andere filosofie
+</h2>
+
+<p>
+Net daar ontstaat een belangrijke strategische tweedeling in de markt.
+</p>
+
+<p>
+Sommige oplossingen vertrekken vanuit planning en bouwen registratie daar rond op.
+Axoo positioneert zich daarentegen als een pragmatische infrastructuur voor KMO’s die wettelijk in orde willen zijn zonder hun volledige werking te moeten herorganiseren.
+</p>
+
+<p>
+Dat verschil wordt richting 2027 steeds belangrijker.
+Zodra tijdsregistratie bekeken wordt als onderdeel van een volledig HR-ecosysteem,
+verschuift de vergelijking automatisch naar functies, modules en integraties.
+</p>
+
+<div class="quote-box">
+<p>
+Wanneer registratie daarentegen benaderd wordt als een minimale en pragmatische compliance-oplossing voor KMO’s,
+ontstaat een volledig andere marktpositie —
+met eenvoud en werkbaarheid als centrale uitgangspunten.
+</p>
+</div>
+
+<p class="comparison-disclaimer">
+Alle merk- en productnamen blijven eigendom van hun respectieve eigenaars.
+Logo’s worden uitsluitend gebruikt ter identificatie van publiek beschikbare oplossingen voor arbeidsregistratie.
+Deze pagina impliceert geen samenwerking, aanbeveling of goedkeuring door de vermelde aanbieders.
+</p>
+
+</article>
+
+</section>
+
+</main>
+
+<script src="js/articles.js"></script>
+
+</body>
+</html>
