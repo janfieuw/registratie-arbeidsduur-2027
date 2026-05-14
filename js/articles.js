@@ -2,7 +2,7 @@ const articles = [
     {
     title: "Is HR-integratie een must?",
     date: "14 mei 2026",
-    url: "ubook-axoo.html",
+    url: "booku-axoo.html",
     keywords: "Ontdek hoe BookU arbeidsregistratie benadert vanuit planning en HR-processen, en waarom Axoo bewust kiest voor een minimale compliance-aanpak voor KMO’s."
   },
       {
