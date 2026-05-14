@@ -511,15 +511,7 @@
   </script>
 
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5HDC1NJM3W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5HDC1NJM3W');
-</script>
+ 
 <body>
 
 <main class="page">
@@ -782,5 +774,24 @@
 
 <script src="js/articles.js"></script>
 <script src="/js/cookie-banner.js"></script>
+
+<script>
+  if (localStorage.getItem("cookie-consent") === "accepted") {
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-5HDC1NJM3W";
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "G-5HDC1NJM3W");
+  }
+</script>
+
 </body>
 </html>
