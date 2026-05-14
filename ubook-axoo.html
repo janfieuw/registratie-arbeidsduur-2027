@@ -9,7 +9,7 @@
 
 <title>BookU en arbeidsregistratie voor KMO’s | Axoo</title>
 
-<meta name="description" content="Ontdek hoe BookU arbeidsregistratie benadert vanuit planning en HR-processen, en waarom Axoo bewust kiest voor een minimale compliance-aanpak voor KMO’s.">
+<meta name="description" content="BookU vertrekt vanuit planning en HR-processen. Ontdek waarom Axoo voor KMO’s kiest voor eenvoudige arbeidsregistratie als minimale compliance-laag.">
 
 <meta name="robots" content="index, follow">
 <meta name="author" content="Axoo">
@@ -18,7 +18,7 @@
 <link rel="canonical" href="https://www.registratie-arbeidsduur-2027.be/booku-arbeidsregistratie-kmo.html">
 
 <meta property="og:title" content="BookU en arbeidsregistratie voor KMO’s | Axoo">
-<meta property="og:description" content="Waarom sommige KMO’s kiezen voor eenvoudige arbeidsregistratie zonder complexe personeelsplanning.">
+<meta property="og:description" content="Het verschil tussen planning-gebaseerde tijdsregistratie en eenvoudige compliance-first registratie voor KMO’s.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.registratie-arbeidsduur-2027.be/booku-arbeidsregistratie-kmo.html">
 <meta property="og:image" content="https://www.registratie-arbeidsduur-2027.be/images/hero.jpg">
@@ -42,6 +42,7 @@
   --shadow: 0 18px 40px rgba(0,0,0,0.07);
   --radius-xl: 30px;
   --radius-lg: 20px;
+  --radius-md: 14px;
 }
 
 *{
@@ -61,6 +62,7 @@ body{
   color:var(--text);
   line-height:1.7;
   -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
 }
 
 img{
@@ -165,6 +167,11 @@ p{
   font-weight:500;
 }
 
+.logo-link{
+  display:inline-block;
+  width:fit-content;
+}
+
 .logo{
   width:130px;
   height:auto;
@@ -175,6 +182,9 @@ p{
   right:36px;
   bottom:26px;
   z-index:4;
+  display:flex;
+  gap:14px;
+  align-items:center;
 }
 
 .faq-button{
@@ -192,6 +202,7 @@ p{
   gap:22px;
   align-items:center;
   box-shadow:0 14px 36px rgba(0,0,0,0.16);
+  white-space:nowrap;
 }
 
 .content-shell{
@@ -217,6 +228,7 @@ p{
   border:1px solid var(--border);
   border-radius:var(--radius-lg);
   padding:24px 20px;
+  box-shadow:0 8px 20px rgba(20,45,35,0.03);
 }
 
 .article-card h2{
@@ -226,6 +238,55 @@ p{
   letter-spacing:0.04em;
   font-weight:900;
   margin-bottom:22px;
+}
+
+.article-link{
+  display:grid;
+  grid-template-columns:34px 1fr;
+  gap:14px;
+  margin-bottom:22px;
+  align-items:start;
+}
+
+.article-icon{
+  width:28px;
+  height:28px;
+  border:2px solid var(--text);
+  border-radius:4px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:15px;
+  font-weight:700;
+}
+
+.article-title{
+  display:block;
+  font-size:0.98rem;
+  font-weight:700;
+  color:var(--text);
+  line-height:1.25;
+  letter-spacing:-0.015em;
+  margin-bottom:4px;
+}
+
+.article-date{
+  display:block;
+  font-size:0.82rem;
+  color:var(--muted);
+  font-weight:500;
+}
+
+.all-articles{
+  display:inline-flex;
+  align-items:center;
+  gap:14px;
+  margin-top:8px;
+  color:var(--green-dark);
+  font-weight:900;
+  font-size:0.88rem;
+  letter-spacing:0.05em;
+  text-transform:uppercase;
 }
 
 .main-content{
@@ -273,7 +334,7 @@ p{
   display:grid;
   grid-template-columns:1fr;
   gap:18px;
-  margin-top:28px;
+  margin:34px 0;
 }
 
 .provider-card{
@@ -289,7 +350,7 @@ p{
 }
 
 .provider-logo-box{
-  aspect-ratio:1/1;
+  aspect-ratio: 1 / 1;
   border-radius:18px;
   background:linear-gradient(180deg,#f7faf7 0%,#eef5ef 100%);
   border:1px solid #e4ece4;
@@ -303,12 +364,16 @@ p{
   width:100%;
   height:100%;
   object-fit:contain;
-  padding:18px;
+  padding:20px;
+  display:block;
 }
 
 .provider-content h3{
   font-size:1.42rem;
+  line-height:1.05;
+  letter-spacing:-0.04em;
   margin-bottom:12px;
+  text-transform:none;
 }
 
 .provider-content p{
@@ -333,6 +398,7 @@ p{
   color:var(--green-dark);
   font-size:0.78rem;
   font-weight:800;
+  letter-spacing:0.02em;
   text-transform:uppercase;
 }
 
@@ -351,8 +417,30 @@ p{
     grid-template-columns:1fr;
   }
 
+  .hero-copy{
+    padding:28px 34px;
+  }
+
+  .hero-media{
+    min-height:300px;
+  }
+
+  .hero-actions{
+    position:absolute;
+    right:24px;
+    left:24px;
+    bottom:24px;
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .faq-button{
+    width:100%;
+  }
+
   .content-shell{
     grid-template-columns:1fr;
+    gap:28px;
   }
 
   .divider{
@@ -361,6 +449,41 @@ p{
 
   .provider-card{
     grid-template-columns:1fr;
+  }
+
+  .provider-logo-box{
+    min-height:100px;
+  }
+}
+
+@media (max-width:700px){
+
+  .page{
+    width:min(100% - 24px, 1500px);
+  }
+
+  .hero-copy{
+    padding:24px;
+  }
+
+  .hero h1{
+    font-size:2rem;
+  }
+
+  .hero-media{
+    min-height:260px;
+  }
+
+  .content-shell{
+    padding:20px 18px;
+  }
+
+  .content-article h2{
+    font-size:1.7rem;
+  }
+
+  .provider-card{
+    padding:22px 20px;
   }
 }
 
@@ -383,7 +506,7 @@ Praktische info voor Belgische KMO’s
 </div>
 
 <h1>
-BOOKU EN DE VERSCHILLENDE VISIES OP ARBEIDSREGISTRATIE
+BookU en arbeidsregistratie voor KMO’s
 </h1>
 
 <p class="hero-text">
@@ -396,6 +519,7 @@ Deze website werd opgesteld in samenwerking met
 
 <a
 href="https://www.axoo.be/referal"
+class="logo-link"
 target="_blank"
 rel="noopener"
 >
@@ -449,8 +573,8 @@ Laatste artikelen
 
 <div class="quote-box">
 <p>
-De discussie rond arbeidsregistratie gaat vandaag niet alleen over registratie zelf,
-maar over de vraag hoe ondernemingen arbeid willen organiseren richting 2027.
+Binnen veel ondernemingen ontstaat vandaag een belangrijk momentum rond verplichte arbeidsregistratie.
+De invoering van de regelgeving vanaf 2027 zorgt ervoor dat bedrijven opnieuw moeten nadenken over hoe arbeid georganiseerd, geregistreerd en opgevolgd wordt.
 </p>
 </div>
 
@@ -459,21 +583,33 @@ Het momentum richting 2027
 </h2>
 
 <p>
-Binnen veel ondernemingen ontstaat vandaag een belangrijk momentum rond verplichte arbeidsregistratie.
-De invoering van de regelgeving vanaf 2027 zorgt ervoor dat bedrijven opnieuw moeten nadenken over hoe arbeid georganiseerd, geregistreerd en opgevolgd wordt.
-</p>
-
-<p>
 Voor sommige ondernemingen vormt dat het ideale moment om verder te evolueren richting geïntegreerde planning, personeelsbeheer en HR-processen.
 Voor andere bedrijven rijst echter een fundamentele vraag:
 </p>
 
 <div class="quote-box">
 <p>
-is die evolutie voor onze onderneming daadwerkelijk een voordeel —
-of creëert ze vooral bijkomende complexiteit?
+Is die evolutie voor onze onderneming daadwerkelijk een voordeel — of creëert ze vooral bijkomende complexiteit?
 </p>
 </div>
+
+<h2>
+Planning als vertrekpunt
+</h2>
+
+<p>
+Een voorbeeld van deze benadering zijn systemen zoals BookU,
+waarbij tijdsregistratie geïntegreerd wordt binnen een bredere planning- en HR-omgeving.
+</p>
+
+<p>
+Voor organisaties met grotere teams, complexe uurroosters of uitgebreide personeelsplanning biedt dat duidelijke voordelen.
+Werkroosters, prestaties, afwezigheden en loonverwerking kunnen centraal beheerd en sterk geïntegreerd opgevolgd worden.
+</p>
+
+<p>
+Die aanpak sluit goed aan bij ondernemingen waar planning de dagelijkse werking structureert.
+</p>
 
 <div class="provider-grid">
 
@@ -494,13 +630,12 @@ BookU
 </h3>
 
 <p>
-BookU benadert arbeidsregistratie vanuit een bredere planning- en HR-omgeving.
-Werkroosters, prestaties, afwezigheden en loonverwerking kunnen centraal beheerd en geïntegreerd opgevolgd worden.
+BookU vertrekt vanuit een bredere planning- en HR-omgeving.
+Tijdsregistratie wordt daarbij gekoppeld aan personeelsplanning, prestaties, afwezigheden en administratieve opvolging.
 </p>
 
 <p>
-Voor organisaties met grotere teams, complexe uurroosters of uitgebreide personeelsplanning biedt die aanpak duidelijke voordelen.
-De oplossing sluit goed aan bij ondernemingen waar planning de dagelijkse werking structureert.
+Voor ondernemingen met uitgebreide uurroosters of grotere teams kan deze geïntegreerde aanpak een duidelijke meerwaarde bieden.
 </p>
 
 <div class="provider-tags">
@@ -521,7 +656,7 @@ href="https://www.axoo.be"
 class="provider-logo-box"
 target="_blank"
 rel="noopener"
-aria-label="Axoo"
+aria-label="Bezoek Axoo"
 >
 <img src="images/axoo-logo.png" alt="Axoo logo">
 </a>
@@ -534,13 +669,11 @@ Axoo
 
 <p>
 Axoo maakt bewust de omgekeerde beweging:
-geen planning als vertrekpunt,
-maar registratie van effectieve aanwezigheid als minimale compliance-laag.
+geen planning als vertrekpunt, maar registratie van effectieve aanwezigheid als minimale compliance-laag.
 </p>
 
 <p>
-Daardoor blijft de administratieve impact beperkt,
-terwijl ondernemingen toch beschikken over een controleerbare en wettelijk conforme registratie.
+Daardoor blijft de administratieve impact beperkt, terwijl ondernemingen toch beschikken over een controleerbare en wettelijk conforme registratie.
 </p>
 
 <div class="provider-tags">
@@ -561,7 +694,7 @@ De realiteit binnen veel Vlaamse KMO’s
 </h2>
 
 <p>
-Binnen veel Vlaamse KMO’s verloopt de dagelijkse werking minder planmatig en vaak veel pragmatischer.
+Binnen veel Vlaamse KMO’s verloopt de dagelijkse werking echter minder planmatig en vaak veel pragmatischer.
 Flexibiliteit, operationele eenvoud en wederzijds vertrouwen spelen daar dikwijls een grotere rol dan vooraf volledig uitgewerkte uurroosters.
 </p>
 
@@ -571,8 +704,8 @@ gevalideerd en vervolgens gekoppeld aan tijdsregistratie.
 </p>
 
 <p>
-Niet omdat dergelijke systemen “slecht” zijn,
-maar omdat veel kleinere ondernemingen eenvoudigweg een andere behoefte hebben.
+Niet omdat die systemen “slecht” zijn,
+maar omdat veel kleinere ondernemingen een andere behoefte hebben.
 </p>
 
 <p>
@@ -590,22 +723,57 @@ Net daar ontstaat een belangrijke strategische tweedeling in de markt.
 
 <p>
 Sommige oplossingen vertrekken vanuit planning en bouwen registratie daar rond op.
-Axoo positioneert zich daarentegen als een pragmatische infrastructuur voor KMO’s die wettelijk in orde willen zijn zonder hun volledige werking te moeten herorganiseren.
+Axoo maakt bewust de omgekeerde beweging:
+geen planning als vertrekpunt, maar registratie van effectieve aanwezigheid als minimale compliance-laag.
 </p>
 
 <p>
-Dat verschil wordt richting 2027 steeds belangrijker.
-Zodra tijdsregistratie bekeken wordt als onderdeel van een volledig HR-ecosysteem,
-verschuift de vergelijking automatisch naar functies, modules en integraties.
+Daardoor blijft de administratieve impact beperkt,
+terwijl ondernemingen toch beschikken over een controleerbare en wettelijk conforme registratie.
+</p>
+
+<p>
+Die positionering is fundamenteel anders dan klassieke HR- of planningsoftware.
+</p>
+
+<p>
+Axoo positioneert zich niet als een vereenvoudigde versie van uitgebreide HR-tools,
+maar als een pragmatische infrastructuur voor KMO’s die wettelijk in orde willen zijn zonder hun volledige werking te moeten herorganiseren.
+</p>
+
+<h2>
+Het echte onderscheid richting 2027
+</h2>
+
+<p>
+Precies daarom wordt het huidige momentum zo belangrijk.
+</p>
+
+<p>
+De discussie gaat vandaag niet alleen over tijdsregistratie,
+maar over een bredere strategische keuze:
 </p>
 
 <div class="quote-box">
 <p>
-Wanneer registratie daarentegen benaderd wordt als een minimale en pragmatische compliance-oplossing voor KMO’s,
-ontstaat een volledig andere marktpositie —
-met eenvoud en werkbaarheid als centrale uitgangspunten.
+Zien ondernemingen verplichte registratie als het startpunt van verdere HR-digitalisering en planning —
+of zoeken ze vooral een werkbare manier om conform de regelgeving te blijven zonder bijkomende administratieve lagen?
 </p>
 </div>
+
+<p>
+Dat onderscheid zal de komende jaren steeds bepalender worden.
+</p>
+
+<p>
+Want zodra tijdsregistratie bekeken wordt als onderdeel van een volledig HR-ecosysteem,
+verschuift de vergelijking automatisch naar functies, modules en integraties.
+</p>
+
+<p>
+Wanneer registratie daarentegen benaderd wordt als een minimale en pragmatische compliance-oplossing voor KMO’s,
+ontstaat een volledig andere marktpositie — met eenvoud en werkbaarheid als centrale uitgangspunten.
+</p>
 
 <p class="comparison-disclaimer">
 Alle merk- en productnamen blijven eigendom van hun respectieve eigenaars.
