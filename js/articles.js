@@ -1,10 +1,17 @@
 const articles = [
     {
+    title: "Verplichte tijdsregistratie vanaf 2027: minder zwart-wit?",
+    date: "14 mei 2026",
+    url: "tijdsregistratie-minder-zwart-wit.html",
+    keywords: "Arbeidsregistratie en flexibiliteit: blijft geven en nemen mogelijk?"
+  },
+      {
     title: "Tijdsregistratie & flexibiliteit",
     date: "13 mei 2026",
     url: "tijdsregistratie-flexibiliteit.html",
     keywords: "Arbeidsregistratie en flexibiliteit: blijft geven en nemen mogelijk?"
   },
+
   {
     title: "Aanbieders tijdsregistratie",
     date: "12 mei 2026",
