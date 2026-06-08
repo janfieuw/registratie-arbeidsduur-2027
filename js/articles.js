@@ -1,5 +1,10 @@
 const articles = [
-    {
+  {
+  title: "Wat zegt Stijn Baert over tijdsregistratie vanaf 2027?",
+  url: "wat-zegt-stijn-baert-over-tijdsregistratie-vanaf-2027.html",
+  date: "8 juni 2026"
+},
+  {
     title: "Is HR-integratie een must?",
     date: "14 mei 2026",
     url: "booku-axoo.html",
